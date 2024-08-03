@@ -14,4 +14,95 @@
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 
+	<RJW_BGS.RaceGeneDef ParentName = "Bovine">
+		<defName>NightMule</defName>
+		<raceNames>
+			<li>AA_NightMule</li>
+		</raceNames>
+		<genes>
+			<li>
+				<defName>Body_Hulk</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>Skin_InkBlack</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>Hair_InkBlack</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>MinTemp_SmallDecrease</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>Robust</defName>
+				<chance>0.55</chance>
+			</li>
+			<li>
+				<defName>DarkVision</defName>
+				<chance>0.35</chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef ParentName = "Avian">
+		<defName>NightAve</defName>
+		<raceNames>
+			<li>AA_NightAve</li>
+		</raceNames>
+		<genes>
+			<li>
+				<defName>Skin_InkBlack</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>Hair_InkBlack</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>MinTemp_SmallDecrease</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>DarkVision</defName>
+				<chance>0.35</chance>
+			</li>
+			<li>
+				<defName>MoveSpeed_Quick</defName>
+				<chance>0.5</chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
+	<RJW_BGS.RaceGeneDef ParentName = "Lizard">
+		<defName>Nightling</defName>
+		<raceNames>
+			<li>AA_Nightling</li>
+		</raceNames>
+		<genes>
+			<li>
+				<defName>Skin_InkBlack</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>Hair_InkBlack</defName>
+				<chance>0.7</chance>
+			</li>
+			<li>
+				<defName>MinTemp_SmallDecrease</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>DarkVision</defName>
+				<chance>0.35</chance>
+			</li>
+			<li>
+				<defName>MoveSpeed_Quick</defName>
+				<chance>0.5</chance>
+			</li>
+		</genes>
+	</RJW_BGS.RaceGeneDef>
+
 </Defs>

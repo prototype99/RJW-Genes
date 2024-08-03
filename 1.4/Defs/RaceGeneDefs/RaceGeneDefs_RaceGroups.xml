@@ -184,6 +184,10 @@
 				<chance>0.25</chance>
 			</li>
 			<li>
+				<defName>MeleeDamage_Strong</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
 				<defName>rjw_genes_feline_genitalia</defName>
 				<chance>0.6</chance>
 			</li>
@@ -197,6 +201,13 @@
 			</li>
 			<li>
 				<defName>rjw_genes_hardwired_progenity</defName>
+				<chance>0.2</chance>
+			</li>
+
+			<!-- Alpha Genes -->
+
+			<li>
+				<defName>AG_Thalassophobia</defName>
 				<chance>0.2</chance>
 			</li>
 		</genes>
@@ -339,7 +350,11 @@
 		<genes>
 			<li>
 				<defName>Furskin</defName>
-				<chance>0.4</chance>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>Tail_Smooth</defName>
+				<chance>0.6</chance>
 			</li>
 			<li>
 				<defName>Fertile</defName>
@@ -347,7 +362,7 @@
 			</li>
 			<li>
 				<defName>FastRunner</defName>
-				<chance>0.6</chance>
+				<chance>0.4</chance>
 			</li>
 			<li>
 				<defName>rjw_genes_small_genitalia</defName>
@@ -360,10 +375,6 @@
 			<li>
 				<defName>ToxicEnvironmentResistance_Partial</defName>
 				<chance>0.1</chance>
-			</li>
-			<li>
-				<defName>Body_Thin</defName>
-				<chance>0.6</chance>
 			</li>
 			<li>
 				<defName>rjw_genes_zoophile</defName>

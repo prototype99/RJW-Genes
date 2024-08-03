@@ -134,6 +134,17 @@
 				<defName>rjw_genes_rapist</defName>
 				<chance>0.2</chance>
 			</li>
+
+			<!-- Alpha Genes-->
+
+			<li>
+				<defName>AG_InsectJellyProduction</defName>
+				<chance>0.1</chance>
+			</li>
+			<li>
+				<defName>AG_HivelingVoice</defName>
+				<chance>0.6</chance>
+			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 	
@@ -305,6 +316,17 @@
 			<li>
 				<defName>rjw_genes_hardwired_progenity</defName>
 				<chance>0.2</chance>
+			</li>
+
+			<!-- Alpha Genes -->
+
+			<li>
+				<defName>AG_ClawedHands</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>AG_ScalyBody</defName>
+				<chance>0.4</chance>
 			</li>
 		</genes> 
 	</RJW_BGS.RaceGeneDef>
@@ -503,6 +525,21 @@
 			<li>
 				<defName>rjw_genes_hardwired_progenity</defName>
 				<chance>0.2</chance>
+			</li>
+
+			<!-- Alpha Genes -->
+
+			<li>
+				<defName>AG_LimbRegeneration</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>AG_UVPowered_Mild</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>AG_ScalyBody</defName>
+				<chance>0.4</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -720,6 +757,17 @@
 				<defName>rjw_genes_hardwired_progenity</defName>
 				<chance>0.2</chance>
 			</li>
+
+			<!-- Alpha Genes -->
+
+			<li>
+				<defName>AG_LimbRegeneration</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>AG_UVPowered_Mild</defName>
+				<chance>0.15</chance>
+			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 
@@ -764,6 +812,21 @@
 			<li>
 				<defName>rjw_genes_hardwired_progenity</defName>
 				<chance>0.2</chance>
+			</li>
+
+			<!-- Alpha Genes -->
+
+			<li>
+				<defName>AG_LimbRegeneration</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>AG_UVPowered_Mild</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>AG_ScalyBody</defName>
+				<chance>0.4</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -884,6 +947,21 @@
 			<li>
 				<defName>rjw_genes_hardwired_progenity</defName>
 				<chance>0.1</chance>
+			</li>
+
+			<!-- Alpha Genes -->
+
+			<li>
+				<defName>AG_WaterStriding</defName>
+				<chance>0.4</chance>
+			</li>
+			<li>
+				<defName>AG_UVSensitivity_Minor</defName>
+				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>AG_Sensitivity_Vicious</defName>
+				<chance>0.2</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
@@ -1087,6 +1165,21 @@
 				<defName>rjw_genes_hardwired_progenity</defName>
 				<chance>0.2</chance>
 			</li>
+
+			<!-- Alpha Genes -->
+
+			<li>
+				<defName>AG_LimbRegeneration</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>AG_UVPowered_Mild</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>AG_ScalyBody</defName>
+				<chance>0.4</chance>
+			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 
@@ -1172,6 +1265,21 @@
 				<defName>rjw_genes_hardwired_progenity</defName>
 				<chance>0.2</chance>
 			</li>
+
+			<!-- Alpha Genes -->
+
+			<li>
+				<defName>AG_LimbRegeneration</defName>
+				<chance>0.05</chance>
+			</li>
+			<li>
+				<defName>AG_UVPowered_Mild</defName>
+				<chance>0.15</chance>
+			</li>
+			<li>
+				<defName>AG_ScalyBody</defName>
+				<chance>0.4</chance>
+			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 
@@ -1228,6 +1336,17 @@
 			<li>
 				<defName>AddictionImmune_Psychite</defName>
 				<chance>0.2</chance>
+			</li>
+
+			<!-- Alpha Genes -->
+
+			<li>
+				<defName>AG_LimbRegeneration</defName>
+				<chance>0.1</chance>
+			</li>
+			<li>
+				<defName>AG_UVPowered_Mild</defName>
+				<chance>0.3</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>

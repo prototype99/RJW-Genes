@@ -44,6 +44,21 @@
 				<defName>DarkVision</defName>
 				<chance>0.35</chance>
 			</li>
+
+			<!-- Alpha Genes -->
+
+			<li>
+				<defName>AG_NightOwl</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>AG_FertilityDarkness</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>AG_DevilEyes</defName>
+				<chance>0.6</chance>
+			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 
@@ -73,6 +88,21 @@
 				<defName>MoveSpeed_Quick</defName>
 				<chance>0.5</chance>
 			</li>
+
+			<!-- Alpha Genes -->
+
+			<li>
+				<defName>AG_NightOwl</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>AG_FertilityDarkness</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>AG_DevilEyes</defName>
+				<chance>0.6</chance>
+			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>
 
@@ -101,6 +131,29 @@
 			<li>
 				<defName>MoveSpeed_Quick</defName>
 				<chance>0.5</chance>
+			</li>
+			<li>
+				<defName>PiercingSpine</defName>
+				<chance>0.15</chance>
+			</li>
+
+			<!-- Alpha Genes -->
+
+			<li>
+				<defName>AG_NightStriding</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>AG_NightOwl</defName>
+				<chance>0.6</chance>
+			</li>
+			<li>
+				<defName>AG_FertilityDarkness</defName>
+				<chance>0.3</chance>
+			</li>
+			<li>
+				<defName>AG_DevilEyes</defName>
+				<chance>0.6</chance>
 			</li>
 		</genes>
 	</RJW_BGS.RaceGeneDef>

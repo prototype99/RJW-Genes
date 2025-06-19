@@ -1,4 +1,4 @@
-﻿using HarmonyLib;
+using HarmonyLib;
 using RimWorld;
 using RimWorld.BaseGen;
 using RimWorld.QuestGen;
@@ -118,16 +118,26 @@ namespace RJW_Genes
             
 
             copy.gender = toMultiply.gender;
-            copy.ageTracker = toMultiply.ageTracker;
+            // FIXED: Copy age values instead of sharing ageTracker reference
+            copy.ageTracker.AgeBiologicalTicks = toMultiply.ageTracker.AgeBiologicalTicks;
+            copy.ageTracker.AgeChronologicalTicks = toMultiply.ageTracker.AgeChronologicalTicks;
+            copy.ageTracker.BirthAbsTicks = toMultiply.ageTracker.BirthAbsTicks;
             copy.Name = CreateCloneName(toMultiply,2);
 
             copy.health = CopyRelevantHediffs(copy, toMultiply);
             copy.genes = CopyGeneTracker(copy,toMultiply.genes);
 
-            copy.ideo = toMultiply.ideo;
+            // FIXED: Create new ideo reference instead of sharing
+            copy.ideo = new Pawn_IdeoTracker(copy);
+            if (toMultiply.ideo?.Ideo != null)
+            {
+                copy.ideo.SetIdeo(toMultiply.ideo.Ideo);
+            }
             copy.records = new Pawn_RecordsTracker(copy);
 
-            copy.relations = toMultiply.relations;
+            // FIXED: Create new relations tracker instead of sharing reference
+            copy.relations = new Pawn_RelationsTracker(copy);
+            
             copy.skills = CopySkillTracker(copy,toMultiply.skills);
 
             copy.equipment.DestroyAllEquipment();
@@ -143,9 +153,17 @@ namespace RJW_Genes
                 }
 
 
-            // Birthmother doesn't show as relation (See log below)
-            // copy.relations.AddDirectRelation(PawnRelationDefOf.ParentBirth, toMultiply);
-
+            // Establish parent-child relationship between original and clone
+            // Note: This may still log a warning if trying to relate to self, but won't crash
+            try 
+            {
+                copy.relations.AddDirectRelation(PawnRelationDefOf.Parent, toMultiply);
+            }
+            catch (System.Exception ex)
+            {
+                if (RJW_Genes_Settings.rjw_genes_detailed_debug) 
+                    ModLog.Warning($"Could not establish parent relation: {ex.Message}");
+            }
 
             copy.style = CopyStyleTracker(copy, toMultiply.style);
             copy.story = CopyStoryTracker(copy, toMultiply.story);
@@ -209,11 +227,15 @@ namespace RJW_Genes
             tracker.hairDef = toCopyFrom.hairDef;
             tracker.furDef = toCopyFrom.furDef;
 
-            tracker.traits = toCopyFrom.traits;
+            // FIXED: Create new trait tracker and copy individual traits
+            tracker.traits = new TraitSet(toCopyTo);
+            foreach (Trait trait in toCopyFrom.traits.allTraits)
+            {
+                tracker.traits.GainTrait(new Trait(trait.def, trait.Degree, trait.ScenForced));
+            }
 
             tracker.skinColorOverride = toCopyFrom.skinColorOverride;
             tracker.HairColor = toCopyFrom.HairColor;
-
 
             return tracker;
         }
@@ -222,7 +244,17 @@ namespace RJW_Genes
         {
             var tracker = new Pawn_SkillTracker(toCopyTo);
 
-            tracker.skills = toCopyFrom.skills;
+            // FIXED: Create new skills list and copy individual skill records
+            tracker.skills = new List<SkillRecord>();
+            foreach (SkillRecord skill in toCopyFrom.skills)
+            {
+                SkillRecord newSkill = new SkillRecord(toCopyTo, skill.def);
+                newSkill.Level = skill.Level;
+                newSkill.xpSinceLastLevel = skill.xpSinceLastLevel;
+                newSkill.xpSinceMidnight = skill.xpSinceMidnight;
+                newSkill.passion = skill.passion;
+                tracker.skills.Add(newSkill);
+            }
 
             return tracker;
         }
@@ -312,26 +344,3 @@ namespace RJW_Genes
     }
 
 }
-
-/*
-*
-*Warning:
-*Tried to add pawn relation ParentBirth with self, pawn=Henri
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-Verse.Log:Warning (string)
-RimWorld.Pawn_RelationsTracker:AddDirectRelation (RimWorld.PawnRelationDef,Verse.Pawn)
-RJW_Genes.Patch_OrgasmMytosis:Multiply (Verse.Pawn)
-RJW_Genes.Patch_OrgasmMytosis:Postfix (rjw.JobDriver_Sex,int&)
-(wrapper dynamic-method) rjw.JobDriver_Sex:rjw.JobDriver_Sex.Roll_Orgasm_Duration_Reset_Patch1 (rjw.JobDriver_Sex)
-(wrapper dynamic-method) rjw.JobDriver_Sex:rjw.JobDriver_Sex.Orgasm_Patch2 (rjw.JobDriver_Sex)
-(wrapper dynamic-method) rjw.JobDriver_Sex:rjw.JobDriver_Sex.SexTick_Patch1 (rjw.JobDriver_Sex,Verse.Pawn,Verse.Thing,bool,bool)
-rjw.JobDriver_Rape/<>c__DisplayClass1_0:<MakeNewToils>b__6 ()
-(wrapper dynamic-method) Verse.AI.JobDriver:Verse.AI.JobDriver.DriverTick_Patch0 (Verse.AI.JobDriver)
-Verse.AI.Pawn_JobTracker:JobTrackerTick ()
-Verse.Pawn:Tick ()
-Verse.TickList:Tick ()
-(wrapper dynamic-method) Verse.TickManager:Verse.TickManager.DoSingleTick_Patch2 (Verse.TickManager)
-Verse.TickManager:TickManagerUpdate ()
-Verse.Game:UpdatePlay ()
-Verse.Root_Play:Update ()
- */

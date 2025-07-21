@@ -51,9 +51,6 @@
     <Compile Include="Common\Helpers\MapUtility.cs" />
     <Compile Include="Common\ModLog.cs" />
     <Compile Include="Common\Defs\TickIntervalExtension.cs" />
-    <Compile Include="Common\Patches\PatchImplants.cs" />
-    <Compile Include="Common\Patches\Patch_HediffIncreaseOnSex.cs" />
-    <Compile Include="Common\Patches\Patch_ParentRelationUtility_GetParents.cs" />
     <Compile Include="Genes\Breeding\Abilities\CompAbilityEffect_MatingCall.cs" />
     <Compile Include="Genes\Breeding\Abilities\CompAbilityEffect_PheromoneSpit.cs" />
     <Compile Include="Genes\Breeding\Abilities\CompProperties_AbilityMatingCall.cs" />
@@ -91,7 +88,6 @@
     <Compile Include="Genes\Life_Force\Events\SuccubusVisit\IncidentWorker_SuccubusVisit.cs" />
     <Compile Include="Genes\Life_Force\Events\SuccubusVisit\LordJob_SuccubusVisit.cs" />
     <Compile Include="Genes\Patches\PatchLitteredBirth.cs" />
-    <Compile Include="Common\Patches\PatchPregnancyHelper.cs" />
     <Compile Include="DefOfs\GeneDefOf.cs" />
     <Compile Include="Genes\Breeding\Genes\Gene_MechBreeder.cs" />
     <Compile Include="Genes\Breeding\Patches\PatchMechBirth.cs" />

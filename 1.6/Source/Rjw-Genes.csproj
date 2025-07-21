@@ -204,6 +204,7 @@
     <Compile Include="Settings\RJW_Genes_Settings.cs" />
     <Compile Include="Settings\RJW_Genes_SettingsController.cs" />
     <Compile Include="DefOfs\ThoughtDefOf.cs" />
+    <Compile Include="Common\patches\PatchImplants.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="GeneDefs_GenitaliaTypeEndogenes.xml" />

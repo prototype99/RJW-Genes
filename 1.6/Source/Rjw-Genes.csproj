@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -218,8 +218,7 @@
       <HintPath>..\..\..\..\..\.steam\steam\steamapps\common\RimWorld\RimWorldLinux_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="LLStretcher">
-      <HintPath>..\..\..\..\Mods\rjw-elt-stretching\Assemblies\LLStretcher.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\rjw-elt-stretching\Assemblies\LLStretcher.dll</HintPath>
     </Reference>
     <Reference Include="RJW">
       <HintPath>..\..\..\rjw\1.6\Assemblies\RJW.dll</HintPath>

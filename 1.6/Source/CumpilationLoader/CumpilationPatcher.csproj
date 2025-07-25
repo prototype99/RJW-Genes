@@ -43,7 +43,7 @@
       <HintPath>..\..\..\..\Cumpilation\1.6\Assemblies\Cumpilation.dll</HintPath>
     </Reference>
     <Reference Include="RJW">
-      <HintPath>..\..\..\..\..\Mods\rjw\1.6\Assemblies\RJW.dll</HintPath>
+      <HintPath>..\..\..\..\rjw\1.6\Assemblies\RJW.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Rjw-Genes">

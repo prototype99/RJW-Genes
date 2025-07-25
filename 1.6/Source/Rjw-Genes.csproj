@@ -24,6 +24,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\About\**" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animal_Inheritance\Defs\VGEHybridOffspringDefs.cs" />
@@ -221,11 +222,11 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="RJW">
-      <HintPath>..\..\..\..\Mods\rjw\1.6\Assemblies\RJW.dll</HintPath>
+      <HintPath>..\..\..\rjw\1.6\Assemblies\RJW.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="RJWSexperience">
-      <HintPath>..\..\..\..\Mods\rjw-sexperience\1.6\Assemblies\RJWSexperience.dll</HintPath>
+      <HintPath>..\..\..\rjw-sexperience\1.6\Assemblies\RJWSexperience.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />

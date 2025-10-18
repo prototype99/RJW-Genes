@@ -1,3 +1,11 @@
+# 2.6.2 (19-07-2025)
+(Commits by @cptyossarian 17-03-2025, cleaned up & adapted to 1.6 by @prototype99)
+
+**Fixes**
+
+- Updated Hediffs_PrivateParts_Added to be compatible with current RJW.
+- Address Error when loaded with Big And Small - Vampires and the Undead.
+
 # 2.6.1 (16-10-2025)
 (Commit by @Telanda-DDS)
 

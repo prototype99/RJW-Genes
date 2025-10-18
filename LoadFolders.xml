@@ -41,6 +41,7 @@
 		<li IfModActive="vanillaracesexpanded.archon">1.6/Mods/Archon</li>
 		<li IfModActive="vanillaracesexpanded.android">1.6/Mods/Android</li>
 		<li IfModActive="VanillaExpanded.VGeneticsE">1.6/Mods/VE_Genetics</li>
-		<li IfModActive="ASMR.RJW.RaceSupport">1.6/Mods/RaceSupport</li>
+		<li IfModActive="ASMR.RJW.RaceSupport">1.6/Mods/NotRaceSupport</li>
+		<li IfModActive="RedMattis.Undead">1.6/Mods/NotRaceSupport</li>
 	</v1.6>
 </loadFolders>

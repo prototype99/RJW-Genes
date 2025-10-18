@@ -33,20 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\..\..\..\Steam\steamapps\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="0Harmony, Version=2.3.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Lib.Harmony.2.3.6\lib\net48\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\..\..\..\..\..\..\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\..\..\.steam\steam\steamapps\common\RimWorld\RimWorldLinux_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Cumpilation">
-      <HintPath>..\..\..\..\cumpilation\1.6\Assemblies\Cumpilation.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\..\..\..\Cumpilation\1.6\Assemblies\Cumpilation.dll</HintPath>
     </Reference>
     <Reference Include="RJW">
-      <HintPath>..\..\..\..\..\Mods\rjw\1.6\Assemblies\RJW.dll</HintPath>
+      <HintPath>..\..\..\..\rjw\1.6\Assemblies\RJW.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Rjw-Genes">
@@ -67,6 +64,9 @@
     <Compile Include="Patches\Patch_ProcessingCumbucket.cs" />
     <Compile Include="Patches\Patch_SexTicks_ChangePsyfocus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
